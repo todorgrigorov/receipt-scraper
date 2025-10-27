@@ -1,6 +1,8 @@
 # Receipt Scraper
 
-A Node.js application for scraping and analyzing grocery store receipts. Currently supports Lidl digital receipts.
+A Node.js application for scraping and analyzing grocery store receipts. 
+
+Currently only supports parsing of digital receipts from one of the most popular chains in Bulgaria - Lidl.
 
 ## Prerequisites
 
