@@ -46,7 +46,7 @@ node src/lidl/fetch-receipt-ids.js
 node src/lidl/fetch-receipt-contents.js
 ```
 
-3. Analyze receipts using an LLM (OpenAI):
+3. Turn receipts into JSON structured format using an LLM (OpenAI):
 
 ```bash
 node src/lidl/receipt-analyzer.js
