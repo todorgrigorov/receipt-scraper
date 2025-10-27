@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +12,10 @@
   "dependencies": {
     "dotenv": "^17.2.3",
     "jsdom": "^27.0.1",
-    "openai": "^6.7.0"
+    "openai": "^6.7.0",
+    "p-limit": "^7.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.38.0"
   }
 }
