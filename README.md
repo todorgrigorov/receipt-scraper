@@ -1,12 +1,12 @@
 # Receipt Scraper
 
-A Node.js application for scraping and analyzing grocery store receipts. 
+Node.js scripts for scraping and analyzing grocery store receipts. 
 
 Currently only supports parsing of digital receipts from one of the most popular chains in Bulgaria - Lidl.
 
 ## Prerequisites
 
-- Node.js (version 18 or higher)
+- Node.js (version 22 or higher)
 - OpenAI API key
 
 ## Setup
@@ -52,6 +52,18 @@ node src/lidl/fetch-receipt-contents.js
 
 ```bash
 node src/lidl/receipt-analyzer.js
+```
+
+4. Concat individual receipt JSONs
+
+```bash
+./concat.sh
+```
+
+5. Analyze!
+
+```bash
+python query.py
 ```
 
 Each script processes the output from the previous one, storing results in the `src/lidl/out` directory.
