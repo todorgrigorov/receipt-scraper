@@ -34,7 +34,9 @@ OPENAI_MODEL=your_model_name_here
 
 ## Usage
 
-The application consists of three main scripts:
+The application consists of three main scripts.
+
+Each script processes the output from the previous one, storing results in the `src/lidl/out` directory.
 
 1. Fetch receipt IDs:
 
@@ -65,7 +67,3 @@ node src/lidl/receipt-analyzer.js
 ```bash
 python query.py
 ```
-
-Each script processes the output from the previous one, storing results in the `src/lidl/out` directory.
-
-You can then load the output JSONs in you favorite document DB, e.g. Mongo and query interesting facts about purchasing habits!
